@@ -1,0 +1,9 @@
+<h1>Reviews</h1>
+
+<div id="reviews">
+  <ul>
+    <% @reviews.each do |review| %>
+      <li><%= render review %></li>
+      <% end %>
+  </ul>
+</div>
