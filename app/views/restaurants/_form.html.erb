@@ -1,8 +1,9 @@
+<h1 class="title">Add Restaurant</h1>
 <div class="container">
   <%= simple_form_for(restaurant) do |f| %>
     <%= f.input :name %>
     <%= f.input :address %>
-    <%= f.input :category, collection: ["chinese", "italian", "japanese", "french", "belgian"] %>
+    <%= f.input :category, collection: Restaurant::CATEGORIES %>
     <%= f.input :phone_number %>
     <%= f.submit %>
   <% end %>
